@@ -5,5 +5,5 @@ This is an image for running [Blackblaze B2 Command Line Tool](https://github.co
 ## Usage
 
 ```
-docker run --rm -v /source/dir:/work -e ACCOUNT_ID=sampleId -e APPLICATION_KEY=sampleKey sync source b2://bucket/destination
+docker run --rm -v /source/dir:/work -e ACCOUNT_ID=sampleId -e APPLICATION_KEY=sampleKey waldher/backblaze-b2 sync source b2://bucket/destination
 ```
