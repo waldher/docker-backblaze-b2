@@ -7,3 +7,7 @@ This is an image for running [Blackblaze B2 Command Line Tool](https://github.co
 ```
 docker run --rm -v /source/dir:/work -e ACCOUNT_ID=sampleId -e APPLICATION_KEY=sampleKey waldher/backblaze-b2 sync source b2://bucket/destination
 ```
+
+To discard stdout and only see error messages (useful in large sync operations),
+you can either redirect stdout to `/dev/null` or set a `DISCARD_STDOUT` environemnt variable
+to `true`.
