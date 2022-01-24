@@ -1,6 +1,6 @@
-FROM alpine:3.5
+FROM alpine:3.15
 
-RUN apk add --no-cache py2-pip
+RUN apk add --update --no-cache py3-pip
 
 RUN pip install b2
 
